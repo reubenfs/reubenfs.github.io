@@ -19,8 +19,6 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <!-- Cute Alert Toast Notification-->
-        <link href="libs/cute-alert/style.css" rel="stylesheet" />        
         <!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZTLXH1F5C"></script>
 		<script>
@@ -55,12 +53,7 @@
                 <div class="mx-auto text-center">
                     <h1 class="mx-auto my-0 text-uppercase">Hey!</h1>
                     <h2 class="text-white-50 mx-auto mt-2 mb-5">IT Infrastructure Specialist based in Orlando, FL</h2>
-                    <button class="btn btn-success" id="success">Tap</button>
-                    <button class="btn btn-error" id="error">Tap</button>
-                    <button class="btn btn-warning" id="warning">Tap</button>
-                    <button class="btn btn-info" id="info">Tap</button>
-                    <button class="btn btn-confirm" id="confirm">Tap</button>
-                    <button class="btn btn-toast" id="toast">Tap</button>
+                    <a class="btn btn-primary js-scroll-trigger" href="#about">Tap</a>
                 </div>
             </div>
         </header>
@@ -177,80 +170,16 @@
                     </div>
                 </div>
                 <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="https://github.com/reubenfs"><i class="fab fa-github"></i></a>
                     <a class="mx-2" href="https://www.linkedin.com/in/reubensantos/"><i class="fab fa-linkedin"></i></a>
                     <a class="mx-2" href="https://www.facebook.com/reuben.santos"><i class="fab fa-facebook-f"></i></a>
                     <a class="mx-2" href="https://www.instagram.com/reubenfs"><i class="fab fa-instagram"></i></a>    
-                    <a class="mx-2" href="https://www.twitter.com/reubenfs"><i class="fab fa-twitter"></i></a>       
+                    <a class="mx-2" href="https://www.twitter.com/reubenfs"><i class="fab fa-twitter"></i></a>
+
+                    
                 </div>
             </div>
         </section>
-        <script src="libs/cute-alert/cute-alert.js"></script>
-        <script>
-		var success = document.getElementById("success");
-		success.addEventListener("click", ()=>{
-		  cuteAlert({
-			  type: "success",
-			  title: "Hey there!",
-			  message: "Thanks for the tap/click!",
-			  buttonText: "Okay"
-		  })
-		})
-
-		var error = document.getElementById("error");
-		error.addEventListener("click", ()=>{
-		  cuteAlert({
-			  type: "error",
-			  title: "Error Title",
-			  message: "Error Message",
-			  buttonText: "Okay"
-		  })
-		})
-
-		var warning = document.getElementById("warning");
-		warning.addEventListener("click", ()=>{
-		  cuteAlert({
-			  type: "warning",
-			  title: "Warning Title",
-			  message: "Warning Message",
-			  buttonText: "Okay"
-		  })
-		})
-
-		var info = document.getElementById("info");
-		info.addEventListener("click", ()=>{
-		  cuteAlert({
-			  type: "info",
-			  title: "Info Title",
-			  message: "Info Message",
-			  buttonText: "Okay"
-		  })
-		})
-
-		var confirm = document.getElementById("confirm");
-		confirm.addEventListener("click", ()=>{
-		  cuteAlert({
-			  type: "question",
-			  title: "Confirm Title",
-			  message: "Confirm Message",
-			  confirmText: "Okay",
-			  cancelText: "Cancel"
-		  }).then((e)=>{
-			if ( e == ("Thanks")){
-		  } else {
-			alert(":-(");
-		  }
-		  })
-		})
-
-		var toast = document.getElementById("toast");
-		toast.addEventListener("click", ()=>{
-		  cuteToast({
-			  type: "success",
-			  message: "Info Message",
-			  timer: 5000
-		  })
-		})
-		</script>
         <!-- Footer-->
         <footer class="footer bg-black small text-center text-white-50"><div class="container">&copy; <?php echo date("Y"); ?> Reuben Santos </div></footer>
         <!-- Bootstrap core JS-->
