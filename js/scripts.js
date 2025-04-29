@@ -53,4 +53,9 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
+
+    // Set current year in footer
+    $(function () {
+        $("#year").text(new Date().getFullYear());
+    });
 })(jQuery); // End of use strict
